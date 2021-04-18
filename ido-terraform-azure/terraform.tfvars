@@ -1,0 +1,5 @@
+location             = "West Europe"
+prefix               = "tf"
+resource_group_name  = "myTFResourceGroup"
+public_vm_size       = "Standard_B1s"
+vnet-cidr            = "10.0.0.0/16"
