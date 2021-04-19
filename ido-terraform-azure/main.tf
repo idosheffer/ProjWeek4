@@ -347,6 +347,10 @@ resource "azurerm_virtual_machine" "vm" {
   }
 }
 
+
+
+
+
 # Create a Linux virtual machine 2
 resource "azurerm_virtual_machine" "vm2" {
   name                   = "myTFVM2"
@@ -452,4 +456,12 @@ data "azurerm_public_ip" "ip" {
 #Print public ip
 output "public_ip_address" {
   value = data.azurerm_public_ip.ip.ip_address
+}
+
+output "username" {
+  value = var.admin_username
+}
+
+output "password" {
+  value = var.admin_password
 }
